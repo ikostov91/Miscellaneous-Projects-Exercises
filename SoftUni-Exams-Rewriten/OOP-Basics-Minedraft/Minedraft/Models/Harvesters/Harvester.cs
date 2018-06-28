@@ -3,7 +3,7 @@ using System.Data;
 using System.Runtime.Serialization.Formatters;
 using System.Text;
 
-public class Harvester
+public abstract class Harvester
 {
     private const int MinOreOutput = 0;
     private const int MinEnergyRequirement = 0;

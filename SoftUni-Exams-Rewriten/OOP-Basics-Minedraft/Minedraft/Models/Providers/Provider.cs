@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-public class Provider
+public abstract class Provider
 {
     private const int MinEnergyOutput = 0;
     private const int MaxEnergyOutput = 10000;
