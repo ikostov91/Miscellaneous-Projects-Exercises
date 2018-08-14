@@ -25,7 +25,7 @@ namespace DungeonsAndCodeWizards.Models
 
             if (this.Faction == character.Faction)
             {
-                throw new InvalidOperationException($"Friendly fire! Both characters are from {this.Faction.ToString()} faction!");
+                throw new ArgumentException($"Friendly fire! Both characters are from {this.Faction.ToString()} faction!");
             }
 
             character.TakeDamage(this.AbilityPoints);

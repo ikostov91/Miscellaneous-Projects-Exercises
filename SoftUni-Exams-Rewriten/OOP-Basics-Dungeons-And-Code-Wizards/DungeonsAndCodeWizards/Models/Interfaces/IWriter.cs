@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using DungeonsAndCodeWizards.Core;
 
 namespace DungeonsAndCodeWizards.Models.Interfaces
 {
-    public interface IEngine
+    public interface IWriter
     {
-        void Run();
+        void WriteLine(string message);
     }
 }

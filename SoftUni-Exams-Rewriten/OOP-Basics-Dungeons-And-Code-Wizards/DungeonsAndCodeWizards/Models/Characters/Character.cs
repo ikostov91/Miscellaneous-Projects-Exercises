@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 using DungeonsAndCodeWizards.Models.Enums;
 
@@ -25,7 +26,7 @@ namespace DungeonsAndCodeWizards.Models
             this.BaseArmor = armor;
             this.Armor = armor;
             this.AbilityPoints = abilityPoints;
-            this.bag = bag;
+            this.Bag = bag;
             this.faction = faction;
         }
 
@@ -65,7 +66,15 @@ namespace DungeonsAndCodeWizards.Models
             }
             set
             {
-                this.health = Math.Min(value, this.BaseHealth);
+                if (value > this.BaseHealth)
+                {
+                    value = this.BaseHealth;
+                }
+                if (value < 0)
+                {
+                    value = 0;
+                }
+                this.health = value;
             }
         }
 
@@ -105,6 +114,18 @@ namespace DungeonsAndCodeWizards.Models
             }
         }
 
+        public Bag Bag
+        {
+            get
+            {
+                return this.bag;
+            }
+            private set
+            {
+                this.bag = value;
+            }
+        }
+
         public Faction Faction
         {
             get { return this.faction; }
@@ -128,7 +149,7 @@ namespace DungeonsAndCodeWizards.Models
 
             double hitPointsAfterArmorDamage = Math.Max(0, hitPoints - this.Armor);
             this.Armor = Math.Max(0, this.Armor - hitPoints);
-            this.Health = Math.Max(0,this.Health = hitPointsAfterArmorDamage);
+            this.Health = Math.Max(0,this.Health - hitPointsAfterArmorDamage);
 
             if (this.Health == 0)
             {
@@ -170,7 +191,12 @@ namespace DungeonsAndCodeWizards.Models
         {
             this.EnsureAlive();
 
-            this.bag.AddItem(item);
+            this.Bag.AddItem(item);
+        }
+
+        public override string ToString()
+        {
+            return $"{this.Name} - HP: {this.Health}/{this.BaseHealth}, AP: {this.Armor}/{this.BaseArmor}, Status: {(this.IsAlive ? "Alive" : "Dead")}";
         }
     }
 }
