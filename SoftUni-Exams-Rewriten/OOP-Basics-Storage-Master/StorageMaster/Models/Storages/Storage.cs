@@ -25,11 +25,20 @@ namespace StorageMaster.Models.Storages
             this.products = new List<Product>();
         }
 
-        public string Name { get; private set; }
+        public string Name {
+            get { return this.name; }
+            private set { this.name = value; }
+        }
 
-        public int Capacity { get; private set; }
+        public int Capacity {
+            get { return this.capacity; }
+            private set { this.capacity = value; }
+        }
 
-        public int GarageSlots { get; private set; }
+        public int GarageSlots {
+            get { return this.garageSlots; }
+            private set { this.garageSlots = value; }
+        }
 
         public bool IsFull => this.products.Select(x => x.Weight).Sum() >= capacity;
 
@@ -44,7 +53,7 @@ namespace StorageMaster.Models.Storages
                 throw new InvalidOperationException("Invalid garage slot!");
             }
 
-            if (this.garage[garageSlot].IsEmpty)
+            if (this.garage[garageSlot] == null)
             {
                 throw new InvalidOperationException("No vehicle in this garage slot!");
             }

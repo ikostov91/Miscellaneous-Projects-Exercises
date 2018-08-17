@@ -10,12 +10,11 @@ namespace StorageMaster.Models.Storages
         private const int DefaultCapacity = 1;
         private const int DefaultGarageSlots = 2;
 
-        private static Vehicle[] vehicles = { new Truck() };
+        private static readonly Vehicle[] DefaultVehicles = { new Truck() };
 
         public AutomatedWarehouse(string name)
-            : base(name, DefaultCapacity, DefaultGarageSlots, vehicles)
+            : base(name, DefaultCapacity, DefaultGarageSlots, DefaultVehicles)
         {
         }
-
     }
 }
