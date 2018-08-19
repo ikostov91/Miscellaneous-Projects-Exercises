@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using StorageMaster.Core.IO.Interfaces;
-
-namespace StorageMaster.Core.IO
+﻿namespace StorageMaster.Core.IO
 {
+    using System;
+    using Core.IO.Interfaces;
+
     public class ConsoleWriter : IWriter
     {
         public void WriteLine(string input)

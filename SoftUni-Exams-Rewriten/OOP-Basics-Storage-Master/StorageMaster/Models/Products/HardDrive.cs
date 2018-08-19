@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace StorageMaster.Models
+﻿namespace StorageMaster.Models
 {
     public class HardDrive : Product
     {

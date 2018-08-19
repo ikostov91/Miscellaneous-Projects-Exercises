@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace StorageMaster.Models
+﻿namespace StorageMaster.Models
 {
+    using System;
+
     public abstract class Product
     {
         private double price;

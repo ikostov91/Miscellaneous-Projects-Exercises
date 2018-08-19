@@ -1,26 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace StorageMaster.Models.Factories
+﻿namespace StorageMaster.Models.Factories
 {
+    using System;
+    using System.Linq;
+    using System.Reflection;
+
     public class ProductFactory
     {
         public Product CreateProduct(string type, double price)
-        { 
-            switch (type)
+        {
+            var productType = Assembly.GetExecutingAssembly().GetTypes().FirstOrDefault(x => x.Name == type);
+
+            if (productType == null)
             {
-                case "Gpu":
-                    return new Gpu(price);
-                case "HardDrive":
-                    return new HardDrive(price);
-                case "Ram":
-                    return new Ram(price);
-                case "SolidStateDrive":
-                    return new SolidStateDrive(price);
-                default:
-                    throw new InvalidOperationException("Invalid product type!");
+                throw new InvalidOperationException("Invalid product type!");
             }
+
+            Product product = (Product) Activator.CreateInstance(productType, price);
+            return product;
         }
     }
 }

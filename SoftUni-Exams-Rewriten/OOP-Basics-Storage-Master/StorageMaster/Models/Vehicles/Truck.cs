@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Xml.Schema;
-
-namespace StorageMaster.Models.Vehicles
+﻿namespace StorageMaster.Models.Vehicles
 {
     public class Truck : Vehicle
     {

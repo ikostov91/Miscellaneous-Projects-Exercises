@@ -1,18 +1,18 @@
-﻿using StorageMaster.Models;
-using StorageMaster.Models.Storages;
-using StorageMaster.Models.Vehicles;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics.Tracing;
-using System.Linq;
-using System.Text;
-using StorageMaster.Models.Factories;
-
-namespace StorageMaster.Core
+﻿namespace StorageMaster.Core
 {
+    using Models;
+    using Models.Storages;
+    using Models.Vehicles;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using Models.Factories;
+
     public class StorageMaster
     {
         private ProductFactory productFactory;
+        private StorageFactory storageFactory;
         private readonly List<Product> productPool;
         private readonly List<Storage> storageRegistry;
         private Vehicle currentVehicle;
@@ -20,7 +20,7 @@ namespace StorageMaster.Core
         public StorageMaster()
         {
             this.productFactory = new ProductFactory();
-
+            this.storageFactory = new StorageFactory();
             this.productPool = new List<Product>();
             this.storageRegistry = new List<Storage>();
             this.currentVehicle = null;
@@ -30,28 +30,15 @@ namespace StorageMaster.Core
         {
             Product product = productFactory.CreateProduct(type, price);
             this.productPool.Add(product);
+
             return $"Added {type} to pool";
         }
 
         public string RegisterStorage(string type, string name)
         {
-            Storage storage;
-            switch (type)
-            {
-                case "AutomatedWarehouse":
-                    storage = new AutomatedWarehouse(name);
-                    break;
-                case "DistributionCenter":
-                    storage = new DistributionCenter(name);
-                    break;
-                case "Warehouse":
-                    storage = new Warehouse(name);
-                    break;
-                default:
-                    throw new InvalidOperationException("Invalid storage type!");
-            }
-
+            Storage storage = this.storageFactory.CreateStorage(type, name);
             this.storageRegistry.Add(storage);
+
             return $"Registered {storage.Name}";
         }
 

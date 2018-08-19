@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-
-namespace StorageMaster.Models.Vehicles
+﻿namespace StorageMaster.Models.Vehicles
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
     public abstract class Vehicle
     {
         private int capacity;

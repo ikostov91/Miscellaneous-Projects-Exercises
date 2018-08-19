@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using StorageMaster.Models.Vehicles;
-
-namespace StorageMaster.Models.Storages
+﻿namespace StorageMaster.Models.Storages
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using StorageMaster.Models.Vehicles;
+
     public abstract class Storage
     {
         private string name;
