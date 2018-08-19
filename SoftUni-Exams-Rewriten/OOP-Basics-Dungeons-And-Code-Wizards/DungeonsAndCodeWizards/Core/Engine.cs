@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DungeonsAndCodeWizards.Core.Interfaces;
 using DungeonsAndCodeWizards.Models.Enums;
 using DungeonsAndCodeWizards.Models.Interfaces;
 
@@ -12,14 +13,15 @@ namespace DungeonsAndCodeWizards.Core
         private bool isRunning;
         private readonly IWriter writer;
         private readonly IReader reader;
+        private readonly ICommandInterpreter commandInterpreter;
+        private readonly DungeonMaster dungeonMaster;
 
-        private DungeonMaster dungeonMaster;
-
-        public Engine(IWriter writer, IReader reader)
+        public Engine(IWriter writer, IReader reader, DungeonMaster dungeonMaster, ICommandInterpreter commandInterpreter)
         {
             this.writer = writer;
             this.reader = reader;
-            this.dungeonMaster = new DungeonMaster();
+            this.dungeonMaster = dungeonMaster;
+            this.commandInterpreter = commandInterpreter;
         }
 
         public void Run()
@@ -30,7 +32,16 @@ namespace DungeonsAndCodeWizards.Core
             {
                 try
                 {
-                    this.ReadCommand();
+                    string input = this.reader.Read();
+
+                    if (string.IsNullOrEmpty(input))
+                    {
+                        this.isRunning = false;
+                        return;
+                    }
+
+                    string output = this.commandInterpreter.InterpretCommand(input);
+                    this.writer.WriteLine(output);
                 }
                 catch (ArgumentException ae)
                 {
@@ -47,63 +58,6 @@ namespace DungeonsAndCodeWizards.Core
                     writer.WriteLine(this.dungeonMaster.GetStats());
                     this.isRunning = false;
                 }
-            }
-        }
-
-        private void ReadCommand()
-        {
-            string input = reader.Read();
-            string output = string.Empty;
-
-            if (string.IsNullOrEmpty(input))
-            {
-                this.isRunning = false;
-                return;
-            }
-
-            string[] commandArgs = input.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).ToArray();
-            string commandName = commandArgs[0];
-            string[] args = commandArgs.Skip(1).ToArray();
-            
-            switch (commandName)
-            {
-                case "JoinParty":
-                    output = dungeonMaster.JoinParty(args);
-                    break;
-                case "AddItemToPool":
-                    output = dungeonMaster.AddItemToPool(args);
-                    break;
-                case "PickUpItem":
-                    output = dungeonMaster.PickUpItem(args);
-                    break;
-                case "UseItem":
-                    output = dungeonMaster.UseItem(args);
-                    break;
-                case "UseItemOn":
-                    output = dungeonMaster.UseItemOn(args);
-                    break;
-                case "GiveCharacterItem":
-                    output = dungeonMaster.GiveCharacterItem(args);
-                    break;
-                case "GetStats":
-                    output = dungeonMaster.GetStats();
-                    break;
-                case "Attack":
-                    output = dungeonMaster.Attack(args);
-                    break;
-                case "Heal":
-                    output = dungeonMaster.Heal(args);
-                    break;
-                case "EndTurn":
-                    output = dungeonMaster.EndTurn(args);
-                    break;
-                default:
-                    throw new ArgumentException("Invalid Command!");
-            }
-
-            if (output != string.Empty)
-            {
-                writer.WriteLine(output);
             }
         }
     }
