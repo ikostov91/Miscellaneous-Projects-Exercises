@@ -1644,20 +1644,6 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "DungeonsAndCodeWizards.App/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
-        "dependencies": {
-          "DungeonsAndCodeWizards.Models": "1.0.0",
-          "Microsoft.NETCore.App": "2.0.0"
-        },
-        "compile": {
-          "bin/placeholder/DungeonsAndCodeWizards.App.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DungeonsAndCodeWizards.App.dll": {}
-        }
-      },
       "DungeonsAndCodeWizards.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
@@ -5682,11 +5668,6 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "DungeonsAndCodeWizards.App/1.0.0": {
-      "type": "project",
-      "path": "../DungeonsAndCodeWizards/DungeonsAndCodeWizards.App.csproj",
-      "msbuildProject": "../DungeonsAndCodeWizards/DungeonsAndCodeWizards.App.csproj"
-    },
     "DungeonsAndCodeWizards.Models/1.0.0": {
       "type": "project",
       "path": "../DungeonsAndCodeWizards.Models/DungeonsAndCodeWizards.Models.csproj",
@@ -5695,7 +5676,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "DungeonsAndCodeWizards.App >= 1.0.0",
       "DungeonsAndCodeWizards.Models >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 15.8.0",
       "Microsoft.NETCore.App >= 2.0.0",
@@ -5736,9 +5716,6 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\Repositories\\Miscellaneous-Projects-Exercises\\SoftUni-Exams-Rewriten\\OOP-Basics-Dungeons-And-Code-Wizards\\DungeonsAndCodeWizards\\DungeonsAndCodeWizards.App.csproj": {
-              "projectPath": "D:\\Repositories\\Miscellaneous-Projects-Exercises\\SoftUni-Exams-Rewriten\\OOP-Basics-Dungeons-And-Code-Wizards\\DungeonsAndCodeWizards\\DungeonsAndCodeWizards.App.csproj"
-            },
             "D:\\Repositories\\Miscellaneous-Projects-Exercises\\SoftUni-Exams-Rewriten\\OOP-Basics-Dungeons-And-Code-Wizards\\DungeonsAndCodeWizards.Models\\DungeonsAndCodeWizards.Models.csproj": {
               "projectPath": "D:\\Repositories\\Miscellaneous-Projects-Exercises\\SoftUni-Exams-Rewriten\\OOP-Basics-Dungeons-And-Code-Wizards\\DungeonsAndCodeWizards.Models\\DungeonsAndCodeWizards.Models.csproj"
             }
