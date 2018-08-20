@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using DungeonsAndCodeWizards.Models;
-using DungeonsAndCodeWizards.Models.Enums;
+using DungeonsAndCodeWizards.Models.Characters;
 using DungeonsAndCodeWizards.Models.Factories;
 using DungeonsAndCodeWizards.Models.Interfaces;
+using DungeonsAndCodeWizards.Models.Items;
 
 namespace DungeonsAndCodeWizards.Core
 {

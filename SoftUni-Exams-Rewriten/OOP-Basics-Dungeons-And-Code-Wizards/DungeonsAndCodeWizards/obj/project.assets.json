@@ -196,6 +196,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "DungeonsAndCodeWizards.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/DungeonsAndCodeWizards.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DungeonsAndCodeWizards.Models.dll": {}
+        }
       }
     }
   },
@@ -656,10 +666,16 @@
         "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "DungeonsAndCodeWizards.Models/1.0.0": {
+      "type": "project",
+      "path": "../DungeonsAndCodeWizards.Models/DungeonsAndCodeWizards.Models.csproj",
+      "msbuildProject": "../DungeonsAndCodeWizards.Models/DungeonsAndCodeWizards.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "DungeonsAndCodeWizards.Models >= 1.0.0",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
@@ -673,9 +689,9 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\Repositories\\Miscellaneous-Projects-Exercises\\SoftUni-Exams-Rewriten\\OOP-Basics-Dungeons-And-Code-Wizards\\DungeonsAndCodeWizards\\DungeonsAndCodeWizards.csproj",
-      "projectName": "DungeonsAndCodeWizards",
-      "projectPath": "D:\\Repositories\\Miscellaneous-Projects-Exercises\\SoftUni-Exams-Rewriten\\OOP-Basics-Dungeons-And-Code-Wizards\\DungeonsAndCodeWizards\\DungeonsAndCodeWizards.csproj",
+      "projectUniqueName": "D:\\Repositories\\Miscellaneous-Projects-Exercises\\SoftUni-Exams-Rewriten\\OOP-Basics-Dungeons-And-Code-Wizards\\DungeonsAndCodeWizards\\DungeonsAndCodeWizards.App.csproj",
+      "projectName": "DungeonsAndCodeWizards.App",
+      "projectPath": "D:\\Repositories\\Miscellaneous-Projects-Exercises\\SoftUni-Exams-Rewriten\\OOP-Basics-Dungeons-And-Code-Wizards\\DungeonsAndCodeWizards\\DungeonsAndCodeWizards.App.csproj",
       "packagesPath": "C:\\Users\\ikost\\.nuget\\packages\\",
       "outputPath": "D:\\Repositories\\Miscellaneous-Projects-Exercises\\SoftUni-Exams-Rewriten\\OOP-Basics-Dungeons-And-Code-Wizards\\DungeonsAndCodeWizards\\obj\\",
       "projectStyle": "PackageReference",
@@ -695,7 +711,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Repositories\\Miscellaneous-Projects-Exercises\\SoftUni-Exams-Rewriten\\OOP-Basics-Dungeons-And-Code-Wizards\\DungeonsAndCodeWizards.Models\\DungeonsAndCodeWizards.Models.csproj": {
+              "projectPath": "D:\\Repositories\\Miscellaneous-Projects-Exercises\\SoftUni-Exams-Rewriten\\OOP-Basics-Dungeons-And-Code-Wizards\\DungeonsAndCodeWizards.Models\\DungeonsAndCodeWizards.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

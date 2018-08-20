@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using DungeonsAndCodeWizards.App.Core.Interfaces;
 using DungeonsAndCodeWizards.Models.Interfaces;
 
-namespace DungeonsAndCodeWizards.Core.IO
+namespace DungeonsAndCodeWizards.App.Core.IO
 {
     public class ConsoleReader : IReader
     {

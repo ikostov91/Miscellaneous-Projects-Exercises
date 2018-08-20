@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v2.0": {
       "DungeonsAndCodeWizards.App/1.0.0": {
+        "dependencies": {
+          "DungeonsAndCodeWizards.Models": "1.0.0"
+        },
         "runtime": {
           "DungeonsAndCodeWizards.App.dll": {}
+        }
+      },
+      "DungeonsAndCodeWizards.Models/1.0.0": {
+        "runtime": {
+          "DungeonsAndCodeWizards.Models.dll": {}
         }
       }
     }
   },
   "libraries": {
     "DungeonsAndCodeWizards.App/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DungeonsAndCodeWizards.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

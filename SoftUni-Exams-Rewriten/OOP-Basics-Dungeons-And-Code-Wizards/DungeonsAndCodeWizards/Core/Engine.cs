@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using DungeonsAndCodeWizards.Core.Interfaces;
-using DungeonsAndCodeWizards.Models.Enums;
-using DungeonsAndCodeWizards.Models.Interfaces;
+using DungeonsAndCodeWizards.App.Core.Interfaces;
+using DungeonsAndCodeWizards.App.Interfaces;
 
 namespace DungeonsAndCodeWizards.Core
 {
