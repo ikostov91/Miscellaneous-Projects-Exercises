@@ -36,8 +36,7 @@ namespace DungeonsAndCodeWizards.Core
 
                     if (string.IsNullOrEmpty(input))
                     {
-                        this.isRunning = false;
-                        return;
+                        break;
                     }
 
                     string output = this.commandInterpreter.InterpretCommand(input);
@@ -52,13 +51,15 @@ namespace DungeonsAndCodeWizards.Core
                     writer.WriteLine($"Invalid Operation: {ioe.Message}");
                 }
 
-                if (this.dungeonMaster.IsGameOver() || isRunning == false) 
-                {
-                    writer.WriteLine("Final stats:");
-                    writer.WriteLine(this.dungeonMaster.GetStats());
+                if (this.dungeonMaster.IsGameOver())
+                {                    
                     this.isRunning = false;
                 }
             }
+
+            string endStats = this.dungeonMaster.GetStats();
+            writer.WriteLine("Final stats:");
+            writer.WriteLine(endStats);
         }
     }
 }
