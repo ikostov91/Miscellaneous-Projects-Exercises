@@ -1,0 +1,13 @@
+D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Minedraft\Minedraft.App\obj\Debug\netcoreapp2.0\Minedraft.App.csprojResolveAssemblyReference.cache
+D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Minedraft\Minedraft.App\obj\Debug\netcoreapp2.0\Minedraft.App.csproj.CoreCompileInputs.cache
+D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Minedraft\Minedraft.App\obj\Debug\netcoreapp2.0\Minedraft.App.AssemblyInfoInputs.cache
+D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Minedraft\Minedraft.App\obj\Debug\netcoreapp2.0\Minedraft.App.AssemblyInfo.cs
+D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Minedraft\Minedraft.App\bin\Debug\netcoreapp2.0\Minedraft.App.deps.json
+D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Minedraft\Minedraft.App\bin\Debug\netcoreapp2.0\Minedraft.App.runtimeconfig.json
+D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Minedraft\Minedraft.App\bin\Debug\netcoreapp2.0\Minedraft.App.runtimeconfig.dev.json
+D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Minedraft\Minedraft.App\bin\Debug\netcoreapp2.0\Minedraft.App.dll
+D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Minedraft\Minedraft.App\bin\Debug\netcoreapp2.0\Minedraft.App.pdb
+D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Minedraft\Minedraft.App\bin\Debug\netcoreapp2.0\Minedraft.Models.dll
+D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Minedraft\Minedraft.App\bin\Debug\netcoreapp2.0\Minedraft.Models.pdb
+D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Minedraft\Minedraft.App\obj\Debug\netcoreapp2.0\Minedraft.App.dll
+D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Minedraft\Minedraft.App\obj\Debug\netcoreapp2.0\Minedraft.App.pdb

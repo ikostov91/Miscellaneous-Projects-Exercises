@@ -1,7 +1,10 @@
-﻿namespace DungeonsAndCodeWizards.Models.Factories
+﻿
+
+namespace DungeonsAndCodeWizards.Models.Factories
 {
     using DungeonsAndCodeWizards.Models.Items;
     using System;
+    using DungeonsAndCodeWizards.App.Core.StaticData;
 
     public class ItemFactory
     {

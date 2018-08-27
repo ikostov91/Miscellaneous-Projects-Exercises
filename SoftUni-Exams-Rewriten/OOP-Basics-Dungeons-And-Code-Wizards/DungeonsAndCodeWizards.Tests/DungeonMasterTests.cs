@@ -67,6 +67,19 @@ namespace DungeonsAndCodeWizards.Tests
         }
 
         [Test]
+        public void CharacterSuccessfullyUsesItemOnAnotherCharacter()
+        {
+            string expectedOutput = "Pesho used HealthPotion on Gosho.";
+
+            this.dungeonMaster.JoinParty(new[] { "CSharp", "Warrior", "Pesho" });
+            this.dungeonMaster.JoinParty(new[] { "CSharp", "Warrior", "Gosho" });
+            this.dungeonMaster.AddItemToPool(new[] { "HealthPotion" });
+            this.dungeonMaster.PickUpItem(new[] { "Pesho" });
+
+            Assert.That(() => this.dungeonMaster.UseItemOn(new [] {"Pesho","Gosho","HealthPotion"}), Is.EqualTo(expectedOutput));
+        }
+
+        [Test]
         public void CharacterCannotAttackSelf()
         {
             string expectedOutput = "Cannot attack self!";
@@ -112,6 +125,19 @@ namespace DungeonsAndCodeWizards.Tests
             }
 
             Assert.That(() => this.dungeonMaster.Attack(new[] { "Pesho", "Gosho" }), Is.EqualTo(expectedOutput));
+        }
+
+        [Test]
+        public void CharacterSuccessfullyGivesItemToAnotherCharacter()
+        {
+            string expectedOutput = "Pesho gave Gosho HealthPotion.";
+
+            this.dungeonMaster.JoinParty(new[] { "CSharp", "Warrior", "Pesho" });
+            this.dungeonMaster.JoinParty(new[] { "CSharp", "Warrior", "Gosho" });
+            this.dungeonMaster.AddItemToPool(new[] { "HealthPotion" });
+            this.dungeonMaster.PickUpItem(new[] { "Pesho" });
+
+            Assert.That(() => this.dungeonMaster.GiveCharacterItem(new [] {"Pesho","Gosho","HealthPotion"}), Is.EqualTo(expectedOutput));
         }
     }
 }

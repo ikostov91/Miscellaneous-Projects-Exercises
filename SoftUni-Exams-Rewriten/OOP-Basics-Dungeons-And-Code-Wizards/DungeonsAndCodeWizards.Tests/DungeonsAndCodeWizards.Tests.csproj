@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DungeonsAndCodeWizards.App\DungeonsAndCodeWizards.App.csproj" />
     <ProjectReference Include="..\DungeonsAndCodeWizards.Models\DungeonsAndCodeWizards.Models.csproj" />
   </ItemGroup>
 
