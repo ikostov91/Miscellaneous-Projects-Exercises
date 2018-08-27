@@ -1,9 +1,7 @@
-﻿using Core.Interfaces;
-
-namespace Minedraft.App
+﻿namespace Minedraft.App
 {
+    using Core.Interfaces;
     using Minedraft.App.Core;
-    using Minedraft.App.Core.Interfaces;
     using Minedraft.App.Core.IO;
 
     public class Startup

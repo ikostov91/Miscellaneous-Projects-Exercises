@@ -1,7 +1,6 @@
-﻿using Minedraft.Models.Exceptions;
-
-namespace Minedraft.Models.Factories
+﻿namespace Minedraft.Models.Factories
 {
+    using Minedraft.Models.Exceptions;
     using Minedraft.Models.Harvesters;
     using System.Collections.Generic;
 

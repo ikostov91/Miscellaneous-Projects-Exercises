@@ -1,7 +1,6 @@
-﻿using Minedraft.App.Core.Interfaces;
-
-namespace Minedraft.App.Core.IO
+﻿namespace Minedraft.App.Core.IO
 {
+    using Minedraft.App.Core.Interfaces;
     using System;
 
     public class ConsoleWriter : IWriter

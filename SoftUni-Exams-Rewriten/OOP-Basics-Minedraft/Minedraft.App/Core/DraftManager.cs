@@ -1,6 +1,4 @@
-﻿using Minedraft.Models.Exceptions;
-
-namespace Minedraft.App.Core
+﻿namespace Minedraft.App.Core
 {
     using System;
     using System.Collections.Generic;
@@ -9,6 +7,7 @@ namespace Minedraft.App.Core
     using Minedraft.Models.Factories;
     using Minedraft.Models.Harvesters;
     using Minedraft.Models.Providers;
+    using Minedraft.Models.Exceptions;
 
     public class DraftManager
     {

@@ -1,10 +1,6 @@
-﻿using Minedraft.Models.Exceptions;
-
-namespace Minedraft.Models.Providers
+﻿namespace Minedraft.Models.Providers
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
+    using Minedraft.Models.Exceptions;
 
     public abstract class Provider
     {

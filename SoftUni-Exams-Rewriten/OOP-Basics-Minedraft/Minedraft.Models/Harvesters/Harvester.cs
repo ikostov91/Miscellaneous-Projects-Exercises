@@ -1,7 +1,6 @@
-﻿using Minedraft.Models.Exceptions;
-
-namespace Minedraft.Models.Harvesters
+﻿namespace Minedraft.Models.Harvesters
 {
+    using Minedraft.Models.Exceptions;
     using System;
 
     public abstract class Harvester

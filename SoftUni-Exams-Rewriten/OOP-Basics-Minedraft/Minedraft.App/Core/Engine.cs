@@ -1,23 +1,18 @@
-﻿using Core.Interfaces;
-using Minedraft.Models.Exceptions;
-
-namespace Minedraft.App.Core
+﻿namespace Minedraft.App.Core
 {
     using System;
-    using System.Linq;
     using System.Reflection;
+    using Minedraft.Models.Exceptions;
     using Minedraft.App.Core.Interfaces;
 
     public class Engine : IEngine
     {
-        //private DraftManager draftManager;
         private ICommandInterpreter commandInterpreter;
         private IWriter writer;
         private IReader reader;
 
         public Engine(IWriter writer, IReader reader, ICommandInterpreter commandInterpreter)
         {
-            //this.draftManager = new DraftManager();
             this.commandInterpreter = commandInterpreter;
             this.writer = writer;
             this.reader = reader;
@@ -46,7 +41,7 @@ namespace Minedraft.App.Core
                           || e is InvalidProviderTypeException
                           || e is TargetInvocationException)
                 {
-                    this.writer.WriteLine(e.Message);
+                    this.writer.WriteLine(e.InnerException.Message);
                 }
             }
         }

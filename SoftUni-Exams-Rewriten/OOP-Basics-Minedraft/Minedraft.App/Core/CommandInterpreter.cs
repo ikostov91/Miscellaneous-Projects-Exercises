@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using Core.Interfaces;
-using System.Linq;
-using System.Runtime.CompilerServices;
-
-namespace Minedraft.App.Core
+﻿namespace Minedraft.App.Core
 {
+    using System;
+    using System.Linq;
+    using System.Reflection;
+    using Minedraft.App.Core.Interfaces;
+
     class CommandInterpreter : ICommandInterpreter
     {
         private DraftManager draftManager;
