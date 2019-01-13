@@ -1,0 +1,11 @@
+D:\Repositories\Miscellaneous-Projects-Exercises\VirtualNewOverrideExercise\bin\Debug\netcoreapp2.2\VirtualNewOverrideExercise.deps.json
+D:\Repositories\Miscellaneous-Projects-Exercises\VirtualNewOverrideExercise\bin\Debug\netcoreapp2.2\VirtualNewOverrideExercise.runtimeconfig.json
+D:\Repositories\Miscellaneous-Projects-Exercises\VirtualNewOverrideExercise\bin\Debug\netcoreapp2.2\VirtualNewOverrideExercise.runtimeconfig.dev.json
+D:\Repositories\Miscellaneous-Projects-Exercises\VirtualNewOverrideExercise\bin\Debug\netcoreapp2.2\VirtualNewOverrideExercise.dll
+D:\Repositories\Miscellaneous-Projects-Exercises\VirtualNewOverrideExercise\bin\Debug\netcoreapp2.2\VirtualNewOverrideExercise.pdb
+D:\Repositories\Miscellaneous-Projects-Exercises\VirtualNewOverrideExercise\obj\Debug\netcoreapp2.2\VirtualNewOverrideExercise.csprojAssemblyReference.cache
+D:\Repositories\Miscellaneous-Projects-Exercises\VirtualNewOverrideExercise\obj\Debug\netcoreapp2.2\VirtualNewOverrideExercise.csproj.CoreCompileInputs.cache
+D:\Repositories\Miscellaneous-Projects-Exercises\VirtualNewOverrideExercise\obj\Debug\netcoreapp2.2\VirtualNewOverrideExercise.AssemblyInfoInputs.cache
+D:\Repositories\Miscellaneous-Projects-Exercises\VirtualNewOverrideExercise\obj\Debug\netcoreapp2.2\VirtualNewOverrideExercise.AssemblyInfo.cs
+D:\Repositories\Miscellaneous-Projects-Exercises\VirtualNewOverrideExercise\obj\Debug\netcoreapp2.2\VirtualNewOverrideExercise.dll
+D:\Repositories\Miscellaneous-Projects-Exercises\VirtualNewOverrideExercise\obj\Debug\netcoreapp2.2\VirtualNewOverrideExercise.pdb

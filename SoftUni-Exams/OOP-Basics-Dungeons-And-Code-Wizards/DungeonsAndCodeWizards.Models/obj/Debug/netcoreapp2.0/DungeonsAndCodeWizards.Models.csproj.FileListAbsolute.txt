@@ -1,0 +1,9 @@
+D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Dungeons-And-Code-Wizards\DungeonsAndCodeWizards.Models\obj\Debug\netcoreapp2.0\DungeonsAndCodeWizards.Models.csprojResolveAssemblyReference.cache
+D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Dungeons-And-Code-Wizards\DungeonsAndCodeWizards.Models\obj\Debug\netcoreapp2.0\DungeonsAndCodeWizards.Models.csproj.CoreCompileInputs.cache
+D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Dungeons-And-Code-Wizards\DungeonsAndCodeWizards.Models\obj\Debug\netcoreapp2.0\DungeonsAndCodeWizards.Models.AssemblyInfoInputs.cache
+D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Dungeons-And-Code-Wizards\DungeonsAndCodeWizards.Models\obj\Debug\netcoreapp2.0\DungeonsAndCodeWizards.Models.AssemblyInfo.cs
+D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Dungeons-And-Code-Wizards\DungeonsAndCodeWizards.Models\bin\Debug\netcoreapp2.0\DungeonsAndCodeWizards.Models.deps.json
+D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Dungeons-And-Code-Wizards\DungeonsAndCodeWizards.Models\bin\Debug\netcoreapp2.0\DungeonsAndCodeWizards.Models.dll
+D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Dungeons-And-Code-Wizards\DungeonsAndCodeWizards.Models\bin\Debug\netcoreapp2.0\DungeonsAndCodeWizards.Models.pdb
+D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Dungeons-And-Code-Wizards\DungeonsAndCodeWizards.Models\obj\Debug\netcoreapp2.0\DungeonsAndCodeWizards.Models.dll
+D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Dungeons-And-Code-Wizards\DungeonsAndCodeWizards.Models\obj\Debug\netcoreapp2.0\DungeonsAndCodeWizards.Models.pdb
