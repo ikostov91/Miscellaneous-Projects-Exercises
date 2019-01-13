@@ -693,11 +693,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repositories\\Miscellaneous-Projects-Exercises\\CSharp-Principles-Exercises\\VirtualNewOverrideExercise\\VirtualNewOverrideExercise.csproj",
+      "projectUniqueName": "D:\\Repositories\\Miscellaneous-Projects-Exercises\\CSharp-Principles-Exercises\\OOP-Principles-Exercises\\VirtualNewOverrideExercise\\VirtualNewOverrideExercise.csproj",
       "projectName": "VirtualNewOverrideExercise",
-      "projectPath": "D:\\Repositories\\Miscellaneous-Projects-Exercises\\CSharp-Principles-Exercises\\VirtualNewOverrideExercise\\VirtualNewOverrideExercise.csproj",
+      "projectPath": "D:\\Repositories\\Miscellaneous-Projects-Exercises\\CSharp-Principles-Exercises\\OOP-Principles-Exercises\\VirtualNewOverrideExercise\\VirtualNewOverrideExercise.csproj",
       "packagesPath": "C:\\Users\\ikost\\.nuget\\packages\\",
-      "outputPath": "D:\\Repositories\\Miscellaneous-Projects-Exercises\\CSharp-Principles-Exercises\\VirtualNewOverrideExercise\\obj\\",
+      "outputPath": "D:\\Repositories\\Miscellaneous-Projects-Exercises\\CSharp-Principles-Exercises\\OOP-Principles-Exercises\\VirtualNewOverrideExercise\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
