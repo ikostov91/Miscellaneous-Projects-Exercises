@@ -1,9 +1,0 @@
-D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Storage-Master\StorageMaster.Models\bin\Debug\netcoreapp2.0\StorageMaster.Models.deps.json
-D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Storage-Master\StorageMaster.Models\bin\Debug\netcoreapp2.0\StorageMaster.Models.dll
-D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Storage-Master\StorageMaster.Models\bin\Debug\netcoreapp2.0\StorageMaster.Models.pdb
-D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Storage-Master\StorageMaster.Models\obj\Debug\netcoreapp2.0\StorageMaster.Models.csprojResolveAssemblyReference.cache
-D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Storage-Master\StorageMaster.Models\obj\Debug\netcoreapp2.0\StorageMaster.Models.csproj.CoreCompileInputs.cache
-D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Storage-Master\StorageMaster.Models\obj\Debug\netcoreapp2.0\StorageMaster.Models.AssemblyInfoInputs.cache
-D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Storage-Master\StorageMaster.Models\obj\Debug\netcoreapp2.0\StorageMaster.Models.AssemblyInfo.cs
-D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Storage-Master\StorageMaster.Models\obj\Debug\netcoreapp2.0\StorageMaster.Models.dll
-D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Storage-Master\StorageMaster.Models\obj\Debug\netcoreapp2.0\StorageMaster.Models.pdb

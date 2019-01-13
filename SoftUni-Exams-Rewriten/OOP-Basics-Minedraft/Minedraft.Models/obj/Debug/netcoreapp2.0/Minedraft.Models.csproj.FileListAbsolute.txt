@@ -1,9 +1,0 @@
-D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Minedraft\Minedraft.Models\obj\Debug\netcoreapp2.0\Minedraft.Models.csprojResolveAssemblyReference.cache
-D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Minedraft\Minedraft.Models\obj\Debug\netcoreapp2.0\Minedraft.Models.csproj.CoreCompileInputs.cache
-D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Minedraft\Minedraft.Models\obj\Debug\netcoreapp2.0\Minedraft.Models.AssemblyInfoInputs.cache
-D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Minedraft\Minedraft.Models\obj\Debug\netcoreapp2.0\Minedraft.Models.AssemblyInfo.cs
-D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Minedraft\Minedraft.Models\bin\Debug\netcoreapp2.0\Minedraft.Models.deps.json
-D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Minedraft\Minedraft.Models\bin\Debug\netcoreapp2.0\Minedraft.Models.dll
-D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Minedraft\Minedraft.Models\bin\Debug\netcoreapp2.0\Minedraft.Models.pdb
-D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Minedraft\Minedraft.Models\obj\Debug\netcoreapp2.0\Minedraft.Models.dll
-D:\Repositories\Miscellaneous-Projects-Exercises\SoftUni-Exams-Rewriten\OOP-Basics-Minedraft\Minedraft.Models\obj\Debug\netcoreapp2.0\Minedraft.Models.pdb
