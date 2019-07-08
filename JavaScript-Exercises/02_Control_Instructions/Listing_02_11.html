@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Control Instructions
+        </title>
+    </head>
+    <body>
+        <h3>
+            Listing 2.11
+        </h3>
+        <hr>
+        <script type="text/javascript">
+            function show(x, y, op) {
+                let msg;
+
+                switch (op) {
+                    case 'add':
+                        msg = `${x} + ${y} = ${x + y}` + '<br />';
+                        break;
+                    case 'subtract':
+                        msg = `${x} - ${y} = ${x - y}` + '<br />';
+                        break;
+                    case 'multiply':
+                        msg = `${x} * ${y} = ${x * y}` + '<br />';
+                        break;
+                    case 'divide':
+                        msg = `${x} / ${y} = ${x / y}` + '<br />';
+                        break;
+                    default:
+                        msg = 'Operation invalid.' + '<br />';
+                }
+
+                document.write(msg);
+            }
+
+            show(1, 2, 'add');
+            show(4, 2, 'subtract');
+            show(2, 2, 'multiply');
+            show(9, 3, 'divide');
+            show(1, 2, 'whatever');
+        </script>
+    </body>
+</html>

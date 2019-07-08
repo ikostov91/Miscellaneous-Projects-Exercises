@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Functions
+        </title>
+    </head>
+    <body>
+        <h3>
+            Listing 3.5
+        </h3>
+        <hr>
+        <script type="text/javascript">
+            var myText = "Global Variable";
+
+            document.write(myText + "<br>")
+
+            function show() {
+                myText = "Somewhat global variable";
+                document.write(myText + "<br>")
+
+                var myText = "Local Variable";
+                document.write(myText + "<br>")
+            }
+
+            show();
+
+            document.write(myText + "<br>")
+        </script>
+    </body>
+</html>

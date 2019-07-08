@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Control Instructions
+        </title>
+    </head>
+    <body>
+        <h3>
+            Listing 2.6
+        </h3>
+        <hr>
+        <script type="text/javascript">
+            var n = 100,s = 0, k;
+            var txt = "1<sup>2</sup> + 2<sup>2</sup> + ... + ";
+            txt += n + "<sup>2</sup> = ";
+            for (let k = 1; k <= n; k++) {
+                s += k * k;
+            }
+            document.write(txt + s);
+        </script>
+    </body>
+</html>

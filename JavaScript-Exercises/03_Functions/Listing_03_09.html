@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Functions
+        </title>
+    </head>
+    <body>
+        <h3>
+            Listing 3.9
+        </h3>
+        <hr>
+        <script type="text/javascript">
+            function f(x) {
+                var argType;
+                argType = typeof(x);
+
+                switch (argType) {
+                    case "number":
+                        document.write("Number type.<br>");
+                        break;
+                    case "string":
+                        document.write("String type.<br>");
+                        break;
+                    default:
+                        document.write("Not a number nor a string.<br>");
+                }
+            }
+
+            f("Text");
+            f(123);
+            f(10.5);
+            f(true);
+
+            var a;
+            f(a);
+        </script>
+    </body>
+</html>

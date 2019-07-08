@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Control Instructions
+        </title>
+    </head>
+    <body>
+        <h3>
+            Listing 2.2
+        </h3>
+        <hr>
+        <script type="text/javascript">
+            var txt, name, msg;
+            txt = "Enter your name:";
+            msg = "You did not enter a name!"
+
+            name = window.prompt(txt);
+            if (name != "") {
+                msg = "Nice to meet you, " + name + "!";
+            }
+
+            document.write(msg);
+        </script>
+    </body>
+</html>

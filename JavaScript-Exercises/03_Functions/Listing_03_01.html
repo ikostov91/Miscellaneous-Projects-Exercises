@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Functions
+        </title>
+    </head>
+    <body>
+        <h3>
+            Listing 3.1
+        </h3>
+        <hr>
+        <script type="text/javascript">
+            makeHeader("Let's get familliar with JS Functions.");
+
+            function getRandomText(n) {
+                let txt = "Random numbers between 1 and 10:<br>* "
+                for (let k = 1; k<= n; k++) {
+                    txt += myRand() + " * ";
+                }
+                txt += "<br>";
+                return txt;
+            }
+
+            document.write(getRandomText(20));
+
+            function myRand() {
+                return 1 + Math.floor(10 * Math.random());
+            }
+
+            function makeHeader(t) {
+                document.write("<h4>" + t + "</h4>");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Control Instructions
+        </title>
+    </head>
+    <body>
+        <h3>
+            Listing 2.12
+        </h3>
+        <hr>
+        <script type="text/javascript">
+            document.write('<h4>Random numbers</h4>');
+
+            var rnd, msg; 
+            
+            for (let k = 1, n = 20; k <= 20; k++) {
+                let randNumber = 6 + Math.floor(10 * Math.random());
+                msg = '<b>' + randNumber + '</b> - ';
+
+                switch (randNumber) {
+                    case 6:
+                        msg += 'Perfect Number || '
+                        break;
+                    case 7:
+                    case 11:
+                    case 13:
+                        msg += 'Simple Number || ';
+                        break;
+                    case 10:
+                    case 15:
+                        msg += 'Can be divided by 5 || ';
+                        break;
+                    default:
+                        msg += 'Regular number ||';
+                }
+
+                document.write(msg);
+            }
+        </script>
+    </body>
+</html>
