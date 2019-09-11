@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Functions
+        </title>
+    </head>
+    <body>
+        <h3>
+            Listing 3.15
+        </h3>
+        <hr>
+        <script type="text/javascript">
+            function show(msg) {
+                document.write(msg + "<br>");
+            }
+
+            show("Function show()");
+
+            let f;
+            f = show;
+            f("Now function f()");
+
+            show = "Text value";
+            document.write(show + "<br>");
+
+            f("Again function f()");
+        </script>
+    </body>
+</html>

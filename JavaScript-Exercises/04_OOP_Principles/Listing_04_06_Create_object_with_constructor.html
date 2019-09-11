@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            OOP
+        </title>
+    </head>
+    <body>
+        <h3>
+            Listing 4.6
+        </h3>
+        <hr>
+        <script type="text/javascript">
+            function Fellow(name, age) {
+                this.name = name;
+                this.age = age;
+                this.show = function() {
+                    document.write("<u>Name:</u>: " + this.name + "<br>");
+                    document.write("<u>Age:</u>" + this.age + "<br>");
+                };
+            };
+
+            let objA = new Fellow("Iotko Iotkov", 28);
+            let objB = new Fellow("Gosho Goshov", 39);
+
+            objA.show();
+            objB.show();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Functions
+        </title>
+    </head>
+    <body>
+        <h3>
+            Listing 3.19 - Returning a function from a function
+        </h3>
+        <hr>
+        <script type="text/javascript">
+            function makePolynom(a, b, c) {
+                return function(x) {
+                    return a + b*x + c*x*x;
+                }
+            }
+
+            let P, Q;
+
+            P = makePolynom(1, 2, 1);
+            Q = makePolynom(2, -1, 1);
+
+            let z = 2;
+
+            document.write("P(" + z + ") = " + P(z) + "<br>");
+            document.write("Q(" + z + ") = " + Q(z) + "<br>");
+        </script>
+    </body>
+</html>

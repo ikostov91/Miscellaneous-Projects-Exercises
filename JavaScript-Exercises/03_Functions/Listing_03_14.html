@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Functions
+        </title>
+    </head>
+    <body>
+        <h3>
+            Listing 3.14
+        </h3>
+        <hr>
+        <script type="text/javascript">
+            function mlog(x) {
+                let s = 0, k = 1, q = x;
+                let n = 100;
+
+                while (k <= n) {
+                    doNext();
+                }
+
+                return s;
+
+                function doNext() {
+                    s += q / k;
+                    q *= (-1) * x;
+                    k++;
+                }
+            }
+
+            document.write("<h4>Използване на вътрешна функция.</h4>");
+            let x = 0.5;
+            document.write("ln(1 + "+ x + " ) = " + mlog(x) + "<br>");
+            document.write("Check: " + Math.log(1 + x) + "<br>");
+        </script>
+    </body>
+</html>

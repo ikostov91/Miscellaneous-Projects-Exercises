@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Functions
+        </title>
+    </head>
+    <body>
+        <h3>
+            Listing 3.20 - Returning a reference to a function from another funtion
+        </h3>
+        <hr>
+        <script type="text/javascript">
+            function makeFibs() {
+                let a = 0, b = 1;
+
+                return next;
+
+                function next() {
+                    b = a + b;
+                    a = b - a;
+                    return a;
+                }
+            }
+
+            let nextFib = makeFibs();
+
+            for (let k = 1; k <= 15; k++) {
+                document.write(nextFib() + " | ");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            OOP
+        </title>
+    </head>
+    <body>
+        <h3>
+            Listing 4.10
+        </h3>
+        <hr>
+        <script type="text/javascript">
+            document.write("<h4>Deleting an object's properties.</h4>");
+            
+            let colors = { 
+                red:"Червено", 
+                yellow:"Жълто", 
+                green:"Зелено",
+                show: function() {
+                    with(document) {
+                        write("Properties and methods of the object:<br>");
+                        for (let s in this) {
+                            write(s + " | ");
+                        }
+                        write("<hr>");
+                    };
+                }
+            };
+
+            colors.show();
+
+            delete colors.red;
+            colors.show();
+
+            delete colors.yellow;
+            colors.show();
+
+            delete colors.show;
+
+            let tst = '"show" in colors';
+            document.write(tst + "-> " + eval(tst) + "<br>");
+
+            tst = '"green" in colors';
+            document.write(tst + "-> " + eval(tst) + "<br>");
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Functions
+        </title>
+    </head>
+    <body>
+        <h3>
+            Listing 3.16
+        </h3>
+        <hr>
+        <script type="text/javascript">
+            function first() {
+                document.write("First function<br>");
+            }
+
+            function second() {
+                document.write("Second function<br>");
+            }
+
+            first();
+            second();
+
+            let temp = first;
+            first = second;
+            second = temp;
+
+            first();
+            second();
+        </script>
+    </body>
+</html>

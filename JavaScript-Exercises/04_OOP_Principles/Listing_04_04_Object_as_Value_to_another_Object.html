@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            OOP
+        </title>
+    </head>
+    <body>
+        <h3>
+            Listing 4.4
+        </h3>
+        <hr>
+        <script type="text/javascript">
+            let objA = { 
+                name: "Ivan Petrov", 
+                age: 28,
+                show: function() {
+                    document.write("<u>Name:</u>: " + this.name + "<br>");
+                    document.write("<u>Age:</u>" + this.age + "<br>");
+                } 
+            };
+            
+            document.write("<b>Object objA:</b>");
+            objA.show();
+
+            let objB = objA;
+            document.write("<b>Object objB:</b>");
+            objB.show();
+
+            objA.name = "Kiril Kirilov";
+            objA.age++;
+            document.write("<b>Object objA:</b>");
+            objA.show();
+
+            document.write("<b>Object objB:</b>");
+            objB.show();
+        </script>
+    </body>
+</html>

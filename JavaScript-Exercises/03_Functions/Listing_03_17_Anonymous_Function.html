@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Functions
+        </title>
+    </head>
+    <body>
+        <h3>
+            Listing 3.17 - Anonymous functions
+        </h3>
+        <hr>
+        <script type="text/javascript">
+            let f = function(msg) {
+                document.write(msg + "<br>");
+            }
+
+            f("Anonymous function!");
+
+            (function(msg) {
+                document.write("<b>" + msg + "</b><br>");
+            }("Another anonymous function!"))
+        </script>
+    </body>
+</html>

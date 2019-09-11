@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            OOP
+        </title>
+    </head>
+    <body>
+        <h3>
+            Listing 4.3
+        </h3>
+        <hr>
+        <script type="text/javascript">
+            let obj = { 
+                name: "Ivan Petrov", 
+                age: 28,
+                show: function() {
+                    document.write("<b>Name:</b>: " + this.name + "<br>");
+                    document.write("<b>Age:</b>" + this.age + "<br>");
+                } 
+            };
+            
+            obj.show();
+
+            obj.name = "Gerasim Gerasimov";
+            obj.age++;
+            obj.show();
+        </script>
+    </body>
+</html>
