@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            OOP
+        </title>
+    </head>
+    <body>
+        <h3>
+            Listing 4.12
+        </h3>
+        <hr>
+        <script type="text/javascript">
+            let text = '"name" in Math';
+
+            document.write(text + " -> " + eval(text) + "<br>");
+
+            let A = { color: 'red' };
+            let B = new Object();
+            B.number = 100;
+
+            showAll();
+
+            Object.prototype.name = "object A";
+
+            document.write(text + " -> " + eval(text) + "<br>");
+            showAll();
+
+            B.name = "object B";
+
+            document.write("Math.name -> " + Math.name + "<br>");
+
+            showAll();
+            delete Object.prototype.name;
+            document.write(text + " -> " + eval(text) + "<br>");
+
+            showAll();
+
+            function show(obj) {
+                for (let s in obj) {
+                    document.write(s + " -> " + obj[s] + " | ");
+                }
+                document.write("<br>");
+            }
+
+            function showAll() {
+                document.write("Object A: ");
+                show(A);
+                document.write("Object B: ");
+                show(B);
+                document.write("<br>");
+            }
+        </script>
+    </body>
+</html>

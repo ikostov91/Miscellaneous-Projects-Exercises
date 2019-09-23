@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            OOP
+        </title>
+    </head>
+    <body>
+        <h3>
+            Listing 4.16
+        </h3>
+        <hr>
+        <script type="text/javascript">
+            function MyObj() {
+                this.number = 0;
+            }
+
+            let A = new MyObj();
+            
+            let F = A.constructor;
+            let B = new F();
+            document.write("Property B.number = " + B.number + "<br>");
+
+            A = {};
+            F = A.constructor;
+            document.write("F == Object -> " + (F == Object) + "<br>");
+
+            A = new function() {
+                this.name = "object";
+            }()
+
+            F = A.constructor;
+            B = new F();
+            document.write("Property B.name = " + B.name);
+        </script>
+    </body>
+</html>

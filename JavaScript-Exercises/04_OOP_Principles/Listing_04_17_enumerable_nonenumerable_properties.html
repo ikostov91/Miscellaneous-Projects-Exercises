@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            OOP
+        </title>
+    </head>
+    <body>
+        <h3>
+            Listing 4.17
+        </h3>
+        <hr>
+        <script type="text/javascript">
+            let A = { number: 100 };
+
+            Object.prototype.name = "object A";
+            for (let a in A) {
+                document.write(a + " | ");
+            }
+
+            test('"toString" in A');
+            test('"valueOf" in A');
+            test('"constructor" in A');
+
+            function test(txt) {
+                document.write("<br>" + txt + " -> " + eval(txt));
+            }
+        </script>
+    </body>
+</html>

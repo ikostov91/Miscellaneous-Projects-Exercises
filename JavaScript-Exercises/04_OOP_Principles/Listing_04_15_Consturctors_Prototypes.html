@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            OOP
+        </title>
+    </head>
+    <body>
+        <h3>
+            Listing 4.15
+        </h3>
+        <hr>
+        <script type="text/javascript">
+            function MyObject(name, number) {
+                this.name = name;
+                this.number = number;
+                this.show = function() {
+                    for (let s in this) {
+                        if (s !== "show") {
+                            document.write(s + " -> " + this[s] + " | ");
+                        }
+                    }
+                    document.write("<br>");
+                }
+            }
+
+            let A = new MyObject("Object A", 100);
+            let B = new MyObject("Object B", 200);
+            
+            document.write("<b>Properties of created objects:</b><br>");
+            A.show();
+            B.show();
+
+            MyObject.prototype.color = "colorless";
+
+            document.write("<b>After adding property to prototype:</b><br>");
+            A.show();
+            B.show();
+
+            A.color = "white";
+            delete MyObject.prototype.color;
+
+            document.write("<b>After deleting property in prototype:</b><br>");
+            A.show();
+            B.show();
+
+            document.write("<b>Checking the prototype of the object:</b><br>");
+            let text = "Object.getPrototypeOf(A) == MyObject.prototype";
+            document.write(text + " -> " + eval(text));
+        </script>
+    </body>
+</html>
