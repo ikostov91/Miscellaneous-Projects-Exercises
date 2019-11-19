@@ -1,14 +1,14 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, Output, EventEmitter } from '@angular/core';
 
 interface Metric {
-  used: number,
-  available: number
+  used: number;
+  available: number;
 }
 
 interface Node {
-  name: string,
-  cpu: Metric,
-  mem: Metric
+  name: string;
+  cpu: Metric;
+  mem: Metric;
 }
 
 @Component({
@@ -16,7 +16,10 @@ interface Node {
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
-export class DashboardComponent implements OnInit {
+export class DashboardComponent implements OnInit, OnDestroy {
+
+
+  @Output() onRefresh: EventEmitter<Date> = new EventEmitter<Date>();
 
   cpu: Metric;
   mem: Metric;
@@ -31,14 +34,15 @@ export class DashboardComponent implements OnInit {
 
     this.interval = setInterval(() => {
       this.generateData();
-    }, 1000);
+    }, 15000);
   }
 
   ngOnDestroy() {
+    console.log('dsadadasdsa');
     clearInterval(this.interval);
   }
 
-  generateData() : void {
+  generateData(): void {
     this.cluster1 = [];
     this.cluster2 = [];
 
@@ -58,10 +62,12 @@ export class DashboardComponent implements OnInit {
     for (let i = 4; i < 7; i++) {
       this.cluster2.push(this.randomNode(i));
     }
+
+    this.onRefresh.emit(new Date());
   }
 
-  private randomNode(i) : Node {
-    let node = {
+  private randomNode(i): Node {
+    const node = {
       name: 'node' + i,
       cpu: { available: 16, used: this.randomInteger(0, 16)},
       mem: { available: 48, used: this.randomInteger(0, 48)}
