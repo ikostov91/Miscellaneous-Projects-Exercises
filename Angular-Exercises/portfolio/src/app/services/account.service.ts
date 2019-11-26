@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Stock } from './stocks.model';
+import { LocalStorageService } from './local-storage.service';
+import { AlertService } from '../services/alert.service';
+import { CurrencyPipe } from '@angular/common';
 
 const defaultBalance: number = 10000;
 
@@ -10,6 +13,11 @@ export class AccountService {
   private _cost: number = 0;
   private _value: number = 0;
   private _stocks: Stock[] = [];
+
+  constructor(
+    private localStorigeService: LocalStorageService,
+    private alertService: AlertService,
+    private currencyPipe: CurrencyPipe) {}
 
   get balance(): number {
     return this._balance;
@@ -31,12 +39,16 @@ export class AccountService {
     stock = Object.assign({}, stock);
     if (stock.price < this.balance) {
       this._balance = this.debit(stock.price, this.balance);
+      stock.cost = stock.price;
+      this._cost = this.credit(stock.price, this.cost);
+      stock.change = 0;
+      this._stocks.push(stock);
+      this.calculateValue();
+      this.cacheValues();
+      this.alertService.alert(`You bought ${stock.symbol} for ` + this.currencyPipe.transform(stock.price, 'USD', true, '.2'), 'success');
+    } else {
+      this.alertService.alert(`You have insufficient funds to buy ${stock.symbol}`, 'danger');
     }
-    stock.cost = stock.price;
-    this._cost = this.credit(stock.price, this.cost);
-    stock.change = 0;
-    this._stocks.push(stock);
-    this.calculateValue();
   }
 
   sell(index: number): void {
@@ -46,20 +58,34 @@ export class AccountService {
       this._stocks.splice(index, 1);
       this._cost = this.debit(stock.cost, this.cost);
       this.calculateValue();
+      this.cacheValues();
+      this.alertService.alert(`You sold ${stock.symbol} for ` + this.currencyPipe.transform(stock.price, 'USD', true, '.2'), 'success');
+    } else {
+      this.alertService.alert(`You do not own the ${stock.symbol} stock.`, 'danger');
     }
   }
 
   init() {
+    this._stocks = this.localStorigeService.get('stocks', []);
+    this._balance = this.localStorigeService.get('balance', defaultBalance);
+    this._cost = this.localStorigeService.get('cost', 0);
   }
 
   reset() {
     this._stocks = [];
     this._balance = defaultBalance;
     this._value = this._cost = 0;
+    this.cacheValues();
   }
 
   calculateValue() {
     this._value = this.stocks.map(stock => stock.price).reduce((a, b) => a + b, 0);
+  }
+
+  private cacheValues() {
+    this.localStorigeService.set('stocks', this.stocks);
+    this.localStorigeService.set('balance', this.balance);
+    this.localStorigeService.set('cost', this.cost);
   }
 
   private debit(amount: number, balance: number): number {

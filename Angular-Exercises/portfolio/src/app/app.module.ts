@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http'; 
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ClarityModule } from 'clarity-angular';
@@ -13,6 +13,8 @@ import { AlertComponent } from './alert/alert.component';
 
 import { LocalStorageService } from './services/local-storage.service';
 import { AccountService } from './services/account.service';
+import { StocksInterceptor } from './services/interceptor.service';
+import { AlertService } from './services/alert.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,13 @@ import { AccountService } from './services/account.service';
   providers: [
         LocalStorageService,
         CurrencyPipe,
-        AccountService
+        AccountService,
+        {
+          provide: HTTP_INTERCEPTORS,
+          useClass: StocksInterceptor,
+          multi: true
+        },
+        AlertService
        ],
   bootstrap: [AppComponent]
 })
