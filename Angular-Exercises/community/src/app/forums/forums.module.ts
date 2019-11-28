@@ -10,7 +10,6 @@ import { ThreadComponent } from './thread/thread.component';
 import { ThreadsComponent } from './threads/threads.component';
 
 import { ForumsService } from './services/forums.service';
-import { RouterModule } from '@angular/router';
 import { ForumsRoutes } from './forums.routes';
 
 @NgModule({
